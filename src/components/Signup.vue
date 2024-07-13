@@ -32,17 +32,19 @@
 <script>
 import { ref } from 'vue'
 import useSignup from '@/composable/useSignup';
+import { useRouter } from 'vue-router';
 export default {
     setup(props) {
         let displayName = ref("");
         let email = ref("");
         let password = ref("");
+        let router = useRouter()
         let {error,createAccount} = useSignup()
 
         let signUpForm = async() => {
             let res = await createAccount(displayName.value, email.value, password.value)
             if (res) {
-                console.log(res);
+                router.push({ name: "quizs" });
             } else {
                 console.log(error);
             }

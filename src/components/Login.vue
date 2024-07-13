@@ -28,16 +28,18 @@
 
 import { ref } from 'vue'
 import useLogin from '@/composable/useLogin';
+import { useRouter } from 'vue-router';
 export default {
     setup(props) {
         let email = ref("");
         let password = ref("");
         let { error, loginAccount } = useLogin();
+        let router = useRouter();
 
         let loginForm = async () => {
             let res = await loginAccount(email.value, password.value);
             if (res) {
-                console.log(res.user);
+                router.push({ name: "quizs" });
             } else {
                 console.log(error);
             }
