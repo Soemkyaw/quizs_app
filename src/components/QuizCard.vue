@@ -22,12 +22,15 @@
                 Read More
               </button>
             </div>
+            
           </div>
 </template>
 
 <script>
-export default {
+import { ref } from 'vue';
 
+export default {
+  
 }
 </script>
 

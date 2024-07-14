@@ -1,5 +1,5 @@
 import { db } from "@/firebase/config";
-import { collection, doc, getDoc } from "firebase/firestore";
+import {  doc, getDoc } from "firebase/firestore";
 import { ref } from 'vue';
 
 let userDetail = ref(null);

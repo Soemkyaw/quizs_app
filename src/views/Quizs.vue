@@ -17,9 +17,6 @@
         <div class="col-start-auto xs:p-5 xs:mx-auto">
           <ShowScore :userDetail="userDetail"></ShowScore>
         </div>
-        <div>
-          <!-- <h1>{{ userDetail }}</h1> -->
-        </div>
       </div>
     </div>
   </div>
@@ -29,10 +26,9 @@
 import ShowScore from '../components/ShowScore'
 import QuizCard from '../components/QuizCard'
 import getUser from '@/composable/getUser';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '@/firebase/config';
-import { onMounted, ref } from 'vue';
+import { auth } from '@/firebase/config';
 import getUserDetail from '@/composable/getUserDetail';
+import { onAuthStateChanged } from 'firebase/auth';
 
 
 export default {
@@ -40,15 +36,18 @@ export default {
     ShowScore, QuizCard
   },
   setup(props) {
-    let { currentUser } = getUser();
+    let { user } = getUser();
+
     let { userDetail, load } = getUserDetail();
 
-    onMounted(() => {
-      if (currentUser.value) {
-        load(currentUser.value.uid)
-      }
-    })
-    
+    onAuthStateChanged(auth, (user) => {
+        if (!user) { // User has logged out
+          userDetail.value = null;
+        } else {
+          load(user.uid);
+        }
+    });
+
     return {userDetail }
   }
 };
