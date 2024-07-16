@@ -1,0 +1,104 @@
+{
+    "quizzes": [
+        {
+            "category": "Science: Computers",
+            "question": "What is the most preferred image format used for logos in the Wikimedia database?",
+            "correct_answer": ".svg",
+            "incorrect_answers": [
+                ".png",
+                ".jpeg",
+                ".gif"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "What does the &quot;MP&quot; stand for in MP3?",
+            "correct_answer": "Moving Picture",
+            "incorrect_answers": [
+                "Music Player",
+                "Multi Pass",
+                "Micro Point"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "What is the code name for the mobile operating system Android 7.0?",
+            "correct_answer": "Nougat",
+            "incorrect_answers": [
+                "Ice Cream Sandwich",
+                "Jelly Bean",
+                "Marshmallow"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "Which programming language shares its name with an island in Indonesia?",
+            "correct_answer": "Java",
+            "incorrect_answers": [
+                "Python",
+                "C",
+                "Jakarta"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "What does GHz stand for?",
+            "correct_answer": "Gigahertz",
+            "incorrect_answers": [
+                "Gigahotz",
+                "Gigahetz",
+                "Gigahatz"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "The programming language &#039;Swift&#039; was created to replace what other programming language?",
+            "correct_answer": "Objective-C",
+            "incorrect_answers": [
+                "C#",
+                "Ruby",
+                "C++"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "On Twitter, what was the original character limit for a Tweet?",
+            "correct_answer": "140",
+            "incorrect_answers": [
+                "120",
+                "160",
+                "100"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "In computing, what does MIDI stand for?",
+            "correct_answer": "Musical Instrument Digital Interface",
+            "incorrect_answers": [
+                "Musical Interface of Digital Instruments",
+                "Modular Interface of Digital Instruments",
+                "Musical Instrument Data Interface"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "Which computer language would you associate Django framework with?",
+            "correct_answer": "Python",
+            "incorrect_answers": [
+                "C#",
+                "C++",
+                "Java"
+            ]
+        },
+        {
+            "category": "Science: Computers",
+            "question": "In web design, what does CSS stand for?",
+            "correct_answer": "Cascading Style Sheet",
+            "incorrect_answers": [
+                "Counter Strike: Source",
+                "Corrective Style Sheet",
+                "Computer Style Sheet"
+            ]
+        }
+    ]
+}
